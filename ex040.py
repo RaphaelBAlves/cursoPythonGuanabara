@@ -8,4 +8,4 @@ elif media >= 5 and media <= 6.9:
     print('RECUPERAÇÃO')
 else:
     print('REPROVADO')
-print(f'Média: {media}')
+print(f'Média: {media:.1f}')
