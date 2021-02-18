@@ -1,8 +1,9 @@
 numero = 0
+numero1 = float(input('Digite um número: '))
+numero2 = float(input('Digite outro: '))
 
 while numero != 5:
-    numero1 = float(input('Digite um número: '))
-    numero2 = float(input('Digite outro: '))
+
 
     print('Opções:')
     print('[1] - somar')
@@ -23,7 +24,12 @@ while numero != 5:
             print(f'O número maior: {numero1}')
         else:
             print(f'O número maior: {numero2}')
+    elif opcao == 4:
+        numero1 = float(input('Digite um número: '))
+        numero2 = float(input('Digite outro: '))
     elif opcao == 5:
         numero  = 5
+    else:
+        print('Opção inválida. Tente novamente.')
 
 print('Fim do programa')
