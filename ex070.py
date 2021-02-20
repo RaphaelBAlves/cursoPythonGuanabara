@@ -16,7 +16,7 @@ while True:
         nome_barato = nome
         mais_barato = valor
 
-    if mais_barato < valor:
+    if valor < mais_barato:
         nome_barato = nome
         mais_barato = valor
 
@@ -24,4 +24,4 @@ while True:
     if pergunta == 'n':
         break
 
-print(f'Total gasto: {total_gasto}\nProdutos mais de R$ 1000: {mais_de_mil}\nProduto mais barato: {nome_barato}')
+print(f'Total gasto: {total_gasto}\nProdutos mais de R$ 1000: {mais_de_mil}\nProduto mais barato: {nome_barato} - Valor: R$ {mais_barato}')
