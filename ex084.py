@@ -20,7 +20,7 @@ for p in pessoas:
         maior_peso = p[1]
 
     if p == pessoas[0]:
-        menor_peso = 0
+        menor_peso = p[1]
 
     if p[1] < menor_peso:
         menor_peso = p[1]
