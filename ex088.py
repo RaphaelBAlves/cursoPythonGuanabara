@@ -8,15 +8,11 @@ quantidade_jogos = int(input('Quantos jogos você quer: '))
 
 for i in range(quantidade_jogos):
     for j in range(6):
-        jogo.append(randint(1, 60))
-        if j == 0:
-            anterior = jogo[j]
-        if j > 0:
-            if anterior == jogo[j]:
-                while anterior == jogo[j]:
-                    jogo[j] = randint(1, 60)
-
-        anterior = jogo[j]
+        while True:
+            num = randint(1, 60)
+            if num not in jogo:
+                jogo.append(num)
+                break
 
     mega.append(jogo[:])
     jogo.clear()
