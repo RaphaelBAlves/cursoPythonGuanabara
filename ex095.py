@@ -23,14 +23,12 @@ while True:
     pergunta = input('Quer continuar? [s/n]: ')
     if pergunta == 'n':
         break
-
+print('Cod. Nome           Gols         Total')
 for i, j in enumerate(lista):
-    print(i, end=' ')
+    print(f'{i:<4}', end=' ')
     for k in j.values():
-        print(f'  {k}  ', end='')
+        print(f'{str(k):<15}', end='')
     print('')
-
-print(lista)
 
 while True:
     escolha = int(input('Mostrar dados de qual jogador? '))
