@@ -22,8 +22,6 @@ def fatorial(numero=1, mostrar=False):
         print(f'Fatorial de {numero}: {f}')
 
 
-#fatorial(5, True)
-
-help(fatorial)
+fatorial(5, True)
 
 
