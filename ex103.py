@@ -1,16 +1,18 @@
-def ficha(nome='', gols=''):
+def ficha(nome='', gols=0):
     if nome == '':
         nome = '<desconhecido>'
 
     print(f'Nome do jogador: {nome}')
 
-    if gols == '':
-        gols = 0
-
     print(f'Quantidade de gols de {nome}: {gols}')
 
 
-nome = input('Nome do jogador: ')
-gols = input('Gols: ')
+nome = str(input('Nome do jogador: ')).strip()
+gols = str(input('Gols: '))
+if gols.isnumeric():
+    gols = int(gols)
+else:
+    gols = 0
+
 
 ficha(nome, gols)

@@ -36,6 +36,5 @@ def notas(* notas_alunos, situacao=False):
 
 
 
-resp = notas(10, 10, 10, situacao=True)
-
+resp = notas(5.5, 2.5, 10, 6.5, situacao=True)
 print(resp)
